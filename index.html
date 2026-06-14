@@ -125,7 +125,7 @@ async function unsubscribe() {
          * Call YOUR backend here
          */
 
-         const formData = new FormData();
+        const formData = new FormData();
 
         formData.append("entry.1935704930", email);
         formData.append("entry.1096880482", name || "");
@@ -133,7 +133,7 @@ async function unsubscribe() {
 
 
         const response = await fetch(
-            "https://docs.google.com/forms/d/e/1dhqtmKl3Bh_SOHCazCC0SwLdMtz0Ds19BpwGCJxsm0k/formResponse",
+            "https://docs.google.com/forms/d/e/1FAIpQLScrCCZPKsgpFYmO3idKO0fZPMsAvl_d6oS1C8Njt0XyJvPolA/formResponse",
             {
                 method: "POST",
                 body: formData,
