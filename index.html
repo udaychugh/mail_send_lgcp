@@ -141,10 +141,6 @@ async function unsubscribe() {
             }
         );
 
-        if (!response.ok) {
-            throw new Error("Request failed");
-        }
-
         document
             .getElementById("loading-section")
             .classList.add("hidden");
